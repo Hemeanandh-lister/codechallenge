@@ -34,5 +34,15 @@ class PermutationServiceTest {
         assertEquals(outputArrayList, testArrayList);
     }
 
+    @Test
+    void testGetPermutaions3() {
+        List<List<Integer>> testArrayList = new ArrayList<List<Integer>>();
+        PermutationService permutationService = new PermutationService();
+
+        testArrayList = Arrays.asList();
+        List<List<Integer>> outputArrayList = permutationService.getPermutaions(new int[]{});
+        assertEquals(outputArrayList, testArrayList);
+    }
+
 
 }
