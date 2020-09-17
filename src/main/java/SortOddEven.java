@@ -4,6 +4,11 @@ import java.util.*;
 
 public class SortOddEven {
 
+    /**
+     * Gets Input array from User. Performs sorting
+     *
+     * @param args
+     */
     public static void main(String[] args) {
 
         System.out.println("Enter number of elements in array");
@@ -24,9 +29,5 @@ public class SortOddEven {
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
-
-
     }
-
-
 }

@@ -7,17 +7,14 @@ public class PermutationService {
     List<List<Integer>> outputArrayList = new ArrayList<List<Integer>>();
 
     /**
-     *
      * @param elements - Input Array for which permutaion has to be generated
      * @return - Array of Array with all combinations.
      */
     public List<List<Integer>> getPermutaions(int[] elements) {
-
         if (elements != null && elements.length > 1) {
             getAllRecursive(0, elements);
         } else if (elements.length == 1) {
-
-            List<Integer> currentArrayList = new ArrayList<Integer>(elements.length);
+            List<Integer> currentArrayList = new ArrayList();
             for (int i : elements) {
                 currentArrayList.add(i);
             }
@@ -30,8 +27,7 @@ public class PermutationService {
      * @param index    - Current start position
      * @param elements - Input Array
      */
-    public void getAllRecursive(
-            int index, int[] elements) {
+    private void getAllRecursive(int index, int[] elements) {
         int arrLength = elements.length;
         if (index == elements.length - 1) {
             List<Integer> currentArrayList = new ArrayList<Integer>(elements.length);
@@ -77,6 +73,4 @@ public class PermutationService {
         }
         return true;
     }
-
-
 }

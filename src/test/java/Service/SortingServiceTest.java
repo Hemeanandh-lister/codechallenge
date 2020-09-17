@@ -18,20 +18,16 @@ class SortingServiceTest {
     }
 
     @Test
-    void isFirstNumberSmaller() {
-        assertEquals(sortingService.isFirstNumberSmaller(2, 4), true);
-        assertEquals(sortingService.isFirstNumberSmaller(2, 3), false);
+    void sortOddEvenNumbers1() {
+        int[] outPutArray = sortingService.sortOddEvenNumbers(new int[]{2, 365, 6, 4});
+        int[] expectedSortedArray = new int[]{365, 2, 4, 6};
+        assertEquals(Arrays.equals(outPutArray, expectedSortedArray), true);
     }
 
     @Test
-    void isEven() {
-        assertEquals(sortingService.isEven(2), true);
-        assertEquals(sortingService.isEven(3), false);
-    }
-
-    @Test
-    void isOdd() {
-        assertEquals(sortingService.isOdd(3), true);
-        assertEquals(sortingService.isOdd(10), false);
+    void sortOddEvenNumbers2() {
+        int[] outPutArray = sortingService.sortOddEvenNumbers(new int[]{25, 4, 12, 9});
+        int[] expectedSortedArray = new int[]{4, 9, 12, 25};
+        assertEquals(Arrays.equals(outPutArray, expectedSortedArray), false);
     }
 }
