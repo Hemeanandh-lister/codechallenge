@@ -1,8 +1,8 @@
 This repo contains solution for two problems:
 
-# Problem 1 - Sorting Odd Numbers first in an Array.
+# Problem 1 - Sorting Odd Numbers first in an Array
 This program receives an array from user and sorts the array in such a way that all the odd numbers are sorted first and then the even numbers are sorted.
-Eg: If user inputs [2, 365, 6, 4], the sorted array would be [365, 2, 4, 6].
+Eg: If user inputs [2, 365, 6, 4], the sorted array would be [365, 2, 4, 6]
 
 Compile and run:https://github.com/hemeanandh/CodingChallenge/blob/master/src/main/java/SortOddEven.java
 
