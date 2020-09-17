@@ -8,11 +8,11 @@ import java.util.stream.Collectors;
 public class PermutationService {
         List<List<Integer>> outputArrayList = new ArrayList<List<Integer>>();
 
-        public List<List<Integer>> getPermuttaions(int n, int[] elements) {
+        public List<List<Integer>> getPermuttaions(int[] elements) {
             if(elements != null && elements.length >1) {
-                printAllRecursive(n, 0, elements);
+                printAllRecursive(elements.length, 0, elements);
             } else if(elements.length == 1){
-                return new ArrayList<List<Integer>>();
+                outputArrayList.add(Arrays.stream(elements).boxed().collect(Collectors.toList()));
             }
             return outputArrayList;
         }
